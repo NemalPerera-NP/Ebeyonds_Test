@@ -18,7 +18,7 @@ body {
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   color: white;
-  height: 85vh;
+  height: 100vh;
 }
 
 /* Navbar styles */
@@ -75,26 +75,6 @@ p {
   .navbar-nav .nav-item:last-child {
     display: none;
   }
-}
-
-/* Hero Section */
-.hero {
-  min-height: 400px; /* Adjust based on your design */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 20px auto;
 }
 
 /* Contact Us Section */
