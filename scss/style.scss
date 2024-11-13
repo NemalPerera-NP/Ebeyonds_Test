@@ -1,0 +1,74 @@
+.header {
+  background-image: url("../assets/Hero Background Shape.svg"), url("assets/Hero Banner.png");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  color: white;
+  height: 65vh;
+
+  .navbar {
+    padding: 1rem;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .language-switcher {
+      color: #fff;
+      margin-left: 0.5rem;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+
+    .dropdown-toggle::after {
+      margin-left: 0.3rem;
+      border-top: 0.3em solid white;
+    }
+
+    .dropdown-menu {
+      background-color: #333;
+
+      .dropdown-item {
+        color: white;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    // Media query to hide the extra hamburger icon on smaller screens
+    @media (max-width: 992px) {
+      .navbar-nav .nav-item:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: auto;
+      color: #eee;
+    }
+  }
+}

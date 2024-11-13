@@ -7,7 +7,6 @@
   <title>Company Landing Page</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 </head>
 
 <body>
@@ -15,17 +14,31 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <a class="navbar-brand" href="#">
-        <img src="img/company-logo.png" alt="" width="30" height="30">
         Company Logo
       </a>
+
+      <!-- Language Switcher Dropdown -->
+      <div class="dropdown ml-3">
+        <a class="nav-link dropdown-toggle language-switcher" href="#" id="languageDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ENGLISH
+        </a>
+        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+          <a class="dropdown-item" href="#">ENGLISH</a>
+          <a class="dropdown-item" href="#">SPANISH</a>
+          <a class="dropdown-item" href="#">FRENCH</a>
+        </div>
+      </div>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img src="assets/hamburger-menu-icon.svg" alt="Menu" width="24" height="24">
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#abot">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -34,20 +47,20 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link language-switcher" href="#">EN</a>
+            <img src="assets/hamburger-menu-icon.svg" alt="Menu" width="24" height="24">
           </li>
         </ul>
       </div>
     </nav>
-  </header>
 
-  <section class="hero text-center text-white py-5">
-    <div class="container">
+    <!-- Adjusted container div -->
+    <div class="container header-content">
       <h1>Welcome to our company...</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua.</p>
     </div>
-  </section>
+  </header>
+
 
   <section class="about-us py-5 text-center">
     <div>
@@ -58,6 +71,24 @@
         magna aliqua.</p>
     </div>
   </section>
+
+  <!-- <section class="latest-newss py-5">
+    <div>
+      <h2 class="text-primary text-center mb-4">Latest News</h2>
+
+    </div class="news_container">
+    <div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="assets/img2.png" class="card-img-top" alt="News Image 1">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Read</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <section class="latest-news py-5">
     <div>
@@ -132,52 +163,43 @@
 
 
 
-  <section class="contact-us py-5">
-    <div class="container">
+  <section class="contact-us">
+    <div class="container-fluid px-0">
       <div class="header_contact">
         <h2 class="text-primary text-center mb-4">Contact Us</h2>
       </div>
-      <div class="map_container">
-        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;"
-          allowfullscreen="" loading="lazy"></iframe>
+      <div class="map_container position-relative">
+        <iframe src="https://www.google.com/maps?q=Keas+69+Str.+15234,+East+Nile+Athens,+Greece&output=embed&z=15"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <div class="location-marker">
+          <img src="assets/map-marker-icon.svg" alt="Location Marker" width="40" height="40">
+        </div>
       </div>
     </div>
   </section>
 
-
-
-
   <footer class="footer py-3 bg-primary text-white text-center">
     <div class="container">
       <div class="row footer_section01">
-        <div class="col-md-6 sub_section">
+        <div class="col-md-1 sub_section">
           <h5>Company Logo</h5>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2">
           <address>
             Keas 69 Str. 15234, East Nile<br>
-            Athens,Greece<br>
+            Athens, Greece<br>
             +249 9123 456 78<br>
             +249 9123 456 78<br>
           </address>
         </div>
         <div class="col-md-6 footer_sub_section_icons">
           <p>Stay connected with</p>
-          <a href="#">
-            <img src="assets/facebook.svg" alt="Facebook" width="24" height="24">
-          </a>
-          <a href="#">
-            <img src="assets/twitter.svg" alt="Twitter" width="24" height="24">
-          </a>
-          <a href="#">
-            <img src="assets/insta.svg" alt="Insta" width="24" height="24">
-          </a>
-          <a href="#">
-            <img src="assets/linkedin.svg" alt="Linkedin" width="24" height="24">
-          </a>
-          <a href="#">
-            <img src="assets/youtube.svg" alt="Youtube" width="24" height="24">
-          </a>
+          <a href="#"><img src="assets/facebook.svg" alt="Facebook" width="24" height="24"></a>
+          <a href="#"><img src="assets/twitter.svg" alt="Twitter" width="24" height="24"></a>
+          <a href="#"><img src="assets/insta.svg" alt="Instagram" width="24" height="24"></a>
+          <a href="#"><img src="assets/linkedin.svg" alt="LinkedIn" width="24" height="24"></a>
+          <a href="#"><img src="assets/youtube.svg" alt="YouTube" width="24" height="24"></a>
         </div>
       </div>
 
@@ -195,7 +217,11 @@
 
 
 
-  <script src="js/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="js/script.js"></script>
 
 </body>
 
