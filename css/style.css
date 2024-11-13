@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Apply the background styles to both the header and hero sections */
+.header,
+.hero {
+  background-image: url("../assets/Hero\ Background\ Shape.svg"),
+    /* SVG overlay */ url("../assets/Hero\ Banner.png"); /* Main hero banner image */
+  background-size: cover, cover; /* Adjust sizing for each layer */
+  background-position: center, center; /* Position each layer */
+  background-repeat: no-repeat, no-repeat;
+  color: white;
+}
+
+.header {
+  padding: 1rem;
+  /* padding: 15px 0; */
+}
+
+.navbar-dark .navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+  margin-right: 20px;
+}
+
+.hero {
+  min-height: 400px; /* Adjust based on your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.language-switcher {
+  border-left: 1px solid white;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+/* .footer {
+}
+
+.footer_sub_section_icons {
+  font-weight: bold;
+}
+.footer_sub_section_icons a {
+  margin-right: 2px;
+} */
