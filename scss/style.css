@@ -37,16 +37,16 @@ body {
   border-top: 0.3em solid white;
 }
 .header .navbar .dropdown-menu {
-  background-color: #333;
+  background-color: #007bff;
 }
 .header .navbar .dropdown-menu .dropdown-item {
   color: white;
 }
 .header .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #555;
+  background-color: #3b5c7f;
 }
 .header .navbar .navbar-nav li {
-  padding: 15px;
+  padding: 20px;
 }
 .header .navbar .navbar-toggler {
   border: none;
@@ -59,8 +59,32 @@ body {
     display: none;
   }
 }
+.header .navbar-collapse {
+  display: none;
+  flex-direction: column;
+  align-items: left;
+  background-color: transparent;
+  position: relative;
+  top: 100%;
+  right: 0;
+  width: 100%;
+}
+.header .navbar-collapse.show {
+  display: flex;
+}
+.header .navbar-collapse .nav-item {
+  padding: 5px;
+  text-align: left;
+}
+.header .navbar-collapse .nav-item .nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.header .navbar-collapse .nav-item .nav-link:hover {
+  color: #ddd;
+}
 .header .header-content {
-  margin-top: 9%;
+  margin-top: 4rem;
   width: 70%;
   text-align: left;
   margin-left: 100px;
@@ -81,6 +105,15 @@ body {
     width: 50%;
     margin-left: 0;
     text-align: center;
+  }
+  .header .header-content .header-content {
+    margin-top: 10px;
+  }
+  .header .header-content .header-content h1 {
+    font-size: 1.5rem;
+  }
+  .header .header-content .header-content p {
+    font-size: 1rem;
   }
 }
 

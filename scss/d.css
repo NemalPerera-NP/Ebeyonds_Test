@@ -45,21 +45,20 @@ body {
     }
 
     .dropdown-menu {
-      background-color: #007bff;
+      background-color: #333;
 
       .dropdown-item {
         color: white;
 
         &:hover {
-          background-color:#3b5c7f;
+          background-color: #555;
         }
       }
     }
     .navbar-nav li{
-      padding: 20px;
+      padding: 15px;
     }
 
-   
     .navbar-toggler {
       border: none;
 
@@ -75,42 +74,9 @@ body {
       }
     }
   }
-  // Custom styles for navbar collapse menu
-  .navbar-collapse {
-    display: none; // Hidden by default
-    flex-direction: column;
-    align-items: left;
-    
-    background-color:transparent; // Dark background for dropdown menu
-position:relative;
-    top: 100%; 
-    right: 0;
-    width: 100%;
-
-    &.show {
-      display: flex; // Show the menu when 'show' class is toggled
-    }
-
-    .nav-item {
-      padding: 5px;
-      text-align: left;
-
-
-      .nav-link {
-        color: #fff;
-        font-size: 1.2rem;
-
-        &:hover {
-          color: #ddd;
-        }
-      }
-    }
-  }
- 
-  
 
   .header-content {
-    margin-top: 4rem;
+    margin-top: 9%;
     width: 70%;
     text-align: left;
     margin-left: 100px;
@@ -132,17 +98,6 @@ position:relative;
       width: 50%;
       margin-left: 0;
       text-align: center;
-      .header-content {
-        margin-top: 10px;
-        h1 {
-          font-size: 1.5rem;
-        }
-    
-        p {
-          font-size: 1rem;
-        
-        }
-      }
     }
   }
 }
